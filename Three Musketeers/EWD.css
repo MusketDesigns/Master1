@@ -1,0 +1,663 @@
+/* ---------------                  Main Body                   -------------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background: rgb(11, 11, 11);
+    overflow: overlay;
+}
+html{
+    scroll-behavior:smooth
+}
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    /* background: rgba(11, 11, 11, 0); */
+    z-index: 1;
+    visibility: hidden;
+  }
+  
+  /* Track */
+  /* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(41, 41, 41); 
+    border-radius: 10px;
+  } */
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(149, 99, 13); 
+    border-radius: 10px;
+    visibility: hidden;
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d5920c; 
+    visibility: visible;
+  }
+  
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(149, 99, 18); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 8px; /* Some padding */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 0.8em; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+  /*    -------------------------      header                       --------------------------------*/
+
+.header{
+    background: rgba(11, 11, 11, 0.974);
+    height: 110vh;
+    width: 100vw;
+}
+
+
+
+.navbar {
+    
+    width: 100vw;
+    height: 90vh;
+    
+}
+
+.navbar img{
+  position: absolute;
+  transform: translate(-50%,-50%) scale(1.3);
+  opacity: 1;
+  animation: view 1.5s 0s;
+  
+}
+
+@keyframes view{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  99%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+    
+  }
+}
+.overlay{
+  width: 50%;
+  height: 50%;
+  opacity: 0; 
+  background: rgb(177, 133, 11);
+  position: absolute;
+  top: 25%;
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+  animation: anim 1.5s;
+}
+
+@keyframes anim {
+  0%{
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+    opacity: 1;
+  }
+  50%{
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+  }
+  51%{
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
+  }
+  99%{
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    opacity: 1;
+  }
+  100%{
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    opacity: 0;
+  }
+}
+.navbar a{
+    
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active{
+    color: #d5920c;
+}
+ #logo{
+    height: inherit;
+    width: inherit;
+    transform: translateY(20%);
+    
+}
+
+ ul{
+    
+    position: absolute;
+    position: fixed;
+    color: rgb(224, 149, 10);
+    font-size: 1.05em;
+    right: -10px;
+    transform: translateY(200%);
+    z-index: 1;
+    background-color: #ffffff1a;
+    padding-left: 0.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+ ul li {
+    list-style: none; 
+    padding: 5px 15px 10px 0px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+ ul li:hover{
+    color: rgb(255, 153, 0);
+    transform: translateX(-20%) scale(1.2);
+    
+    
+}
+.bottom{
+  height: 13vh;
+  background: linear-gradient(to bottom, rgba(13, 13, 13, 0.677),rgb(43, 43, 43));
+  
+}
+.page-scroll{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 100vw;
+    z-index: 2;    
+    height: 9vh;
+}
+
+.page-scroll .btn-circle i.animated {
+   transition-property: -webkit-transform;
+    transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    animation-name: pulse;
+    -moz-animation-name: pulse;
+    animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    
+  }
+  
+  .page-scroll .btn-circle:hover i.animated {
+    animation-name: pulse;
+    -moz-animation-name: pulse;
+    animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+  }
+  
+  @keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  @-moz-keyframes pulse {
+    0% {
+      -moz-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    50% {
+      -moz-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  
+    100% {
+      -moz-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  .btn-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 60px;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: background .4s ease-in-out;
+    -moz-transition: background .4s ease-in-out;
+    transition: background .4s ease-in-out;
+  }
+  
+  .btn-circle:hover, .btn-circle:focus {
+    outline: 0;
+    color: rgb(165, 109, 19);
+    
+  }
+
+
+  /*                          --------------------- ABOUT SECTION -----------------------                 */
+
+
+
+  .about{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    background: linear-gradient(to bottom,rgb(37, 37, 37),rgb(185, 185, 185) );
+  }
+
+  .portSite{
+    position: relative;
+    border-radius: 2%;
+    width: 30%;
+    height: 40%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: right;
+    transition: 0.5s;
+    color: white;
+    top: 1%;
+   
+    
+  }
+  .portCont::before{
+    border-radius: 2%;
+    content: "";
+    background-image: url(./portfolio.jpg);
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .portSite span{
+    color: aqua;
+    font-size: 2em;
+    width: 50%;
+  }
+
+  .portCont h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: bolder;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.715);
+    color: white;
+    width: 80%;
+    height: 44%;
+    display: inline-block;
+    justify-self:right;
+    margin-top: 12%;
+    margin-left: 20%;
+    padding: 4%;
+  }
+
+  .portCont{
+    width: 70%;
+    display: inline-block;
+    justify-self: flex-end;
+  }
+
+  .portSite h2{
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+  }
+  
+  .portSite:hover{
+   
+    transform:scale(1.2) translateX(10%) translateY(10%);
+        
+  }
+
+  .busSite{
+    position: relative;
+    border-radius: 2%;
+    width: 30%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    justify-self: flex-end;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    
+  }
+  .busCont::before{
+    border-radius: 2%;
+    content: "";
+    background-image: url(./website.jpg);
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .busSite h2{
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+    background:#05332eef;
+    width: 50%;
+    margin: 20% 10% 10% 25%;
+    padding: 2%;
+  }
+  .busCont h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: bolder;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.586);
+    color: rgb(0, 0, 0);
+    width: 60%;
+    height: 43%;
+    display: inline-block;
+    justify-self:flex-start;
+    align-self: flex-end;
+    margin: -10% 0% 0% -20%;
+    padding:4%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+
+  .busSite span{
+    color: rgb(5, 90, 54);
+    font-size: 2.5em;
+    
+  }
+
+  .busSite:hover{
+    transform:scale(1.2) translateX(-10%) translateY(-10%);
+
+  }
+
+  .ecomSite{
+    position: relative;
+    border-radius: 2%;
+    width: 30%;
+    height: 60%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    color: white;
+    
+  }
+  .ecomCont::before{
+    border-radius: 2%;
+    content: "";
+    background-image: url(./80689.jpg);
+    background-size: contain;
+    opacity: 0.4;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  
+  .ecomSite h2{
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+  }
+  .ecomSite:hover{
+    color: #976a10;
+    transform:scale(1.3) translateX(-20%) translateY(-20%);
+    
+  }
+
+  
+  
+  /*                    --------------------- Projects SECTION -----------------------                 */
+
+
+
+  .projects{
+    
+    height: 90vh;
+    width: 100vw;
+    background: linear-gradient(to bottom,rgb(187, 187, 187), rgb(209, 208, 208) );
+  
+  }
+
+  
+  .projects h2{
+    
+    display: flex;
+    justify-content: center;
+    right: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4em;
+    color: #f3f2f2;
+    padding-bottom: 0.5%;
+    margin: 2%;
+    margin-top: 0;
+    margin-left: 28%;
+    text-decoration: underline 3px;
+    text-underline-offset: 10%;
+    width: 50%;
+    background-color: #316b6f61;
+  }
+  .projCont{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+  }
+  .proj1{
+    margin-top: 5vh;
+    height: 40vh;
+    width: 30vw;
+    background-color: rgba(72, 150, 178, 0.185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .proj1 img{
+    height: 70%;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .proj1:hover{
+    transform: scale(1.1);
+  }
+  .proj2{
+    height: 50vh;
+    width: 30vw;
+    background-color: rgba(72, 150, 178, 0.185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .proj2 img{
+    height: 80%;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .proj2:hover{
+    transform: scale(1.1);
+  }
+  .proj3{
+    margin-top: 5vh;
+    height: 40vh;
+    width: 30vw;
+    background-color: rgba(72, 150, 178, 0.185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .proj3 img{
+    height: 70%;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .proj3:hover:hover{
+    transform: scale(1.1);
+  }
+    /*                    --------------------- Contact SECTION -----------------------                 */
+
+
+
+    .contact{
+        display: inline-block;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(to bottom,rgb(208, 208, 208), rgb(244, 243, 243) );
+        
+        
+      }
+
+     .conHead{
+        color: white;
+        font-size: 2em;
+        margin: 0 auto;
+        display: flex;
+        height: 11%;
+        width: 30%;
+        margin-bottom: 3%;
+        justify-content: center;
+        text-decoration: underline;
+        text-underline-offset: 0.5em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background:#17354940 ;
+      }
+
+  
+
+    /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #414140;
+    color: rgb(189, 188, 188);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #7d6116;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #a3a3a3ca;
+    padding: 20px;
+    width: 30%;
+    margin-left:2%;
+    color: white;
+    margin-top: -52%;
+  }
+  .conBod{
+    background-color: rgba(70, 93, 158, 0.401);
+    height: 80%;
+    width: 60%;
+    margin-left: 2%;
+    margin-bottom: 20%;
+    border-bottom-left-radius:0% ;
+    border-top-right-radius:100% ;
+    margin-top: -5%;
+  }
+
+.mapouter {
+  padding-top: 35%;
+  margin-left: 32%;
+  
+}
+
+.space{
+  height: 5%;
+}
+  /*  ---------------------------------                     FOOTER              --------------------------------*/
+
+  .footer{
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  /* -------------------------                    Keyframes       -------------- */
+
+  
