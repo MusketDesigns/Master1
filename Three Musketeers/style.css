@@ -460,7 +460,7 @@ span.middot {
 }
 
 .topmargin {
-    margin-top: 3rem !important
+    /* margin-top: 3rem !important */
 }
 
 .bottommargin {
@@ -2835,10 +2835,9 @@ img.lazy:not([src]) {
 .section {
     position: relative;
     width: 100%;
-    margin: 60px 0;
-    padding: 60px 0;
+    padding: 30px 0;
     background-color: #f9f9f9;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .parallax {
@@ -3240,11 +3239,7 @@ html[xmlns] .slider-wrap {
     border-top-right-radius: 0
 }
 
-#header {
-    position: relative;
-    background-color: #fff;
-    border-bottom: 1px solid #f5f5f5
-}
+
 
 #header-wrap {
     position: relative;
@@ -5691,6 +5686,20 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
     transition: opacity .3s ease
 }
 
+#slider{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slider-inner{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+
+}
 .side-panel-open .body-overlay {
     opacity: 1;
     z-index: 599;
@@ -5792,7 +5801,9 @@ body:not(.stretched) .slider-parallax .slider-inner {
         display: -ms-flexbox;
         display: flex;
         flex-grow: 1;
-        align-items: center
+        align-items: center;
+        justify-content:center;
+        background-color: #000;
     }
 }
 
