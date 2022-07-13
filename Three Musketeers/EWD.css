@@ -82,7 +82,7 @@ html{
 }
 
 .navbar img{
-  position: absolute;
+  position: center;
   transform: translate(-50%,-50%) scale(1.3);
   opacity: 1;
   animation: view 1.5s 0s;
