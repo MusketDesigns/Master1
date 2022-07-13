@@ -3493,7 +3493,7 @@ html[xmlns] .slider-wrap {
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    align-self: center;
     -ms-flex-align: center;
     margin-right: auto;
     max-height: 100%
