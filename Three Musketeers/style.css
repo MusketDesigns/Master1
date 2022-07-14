@@ -253,7 +253,8 @@ ul {
 body {
     line-height: 1.5;
     color: rgb(215, 27, 27);
-    font-family: Lato, sans-serif
+    font-family: Lato, sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -460,7 +461,7 @@ span.middot {
 }
 
 .topmargin {
-    margin-top: 3rem !important
+    /* margin-top: 3rem !important */
 }
 
 .bottommargin {
@@ -2835,10 +2836,9 @@ img.lazy:not([src]) {
 .section {
     position: relative;
     width: 100%;
-    margin: 60px 0;
-    padding: 60px 0;
+    padding: 30px 0;
     background-color: #f9f9f9;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .parallax {
@@ -3240,11 +3240,7 @@ html[xmlns] .slider-wrap {
     border-top-right-radius: 0
 }
 
-#header {
-    position: relative;
-    background-color: #fff;
-    border-bottom: 1px solid #f5f5f5
-}
+
 
 #header-wrap {
     position: relative;
@@ -5398,7 +5394,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
         top: 100%;
         left: 0;
         padding: 0;
-        background-color: #1a73e8
+        background-color: #856a10
     }
 
     .page-menu-sub-menu .page-menu-item>a {
@@ -5425,6 +5421,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
         text-shadow: none;
         transform: translateY(-50%);
         z-index: 299
+        color
     }
 
     .dots-menu #page-menu-wrap {
@@ -5432,6 +5429,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
         top: 0 !important;
         box-shadow: none;
         background-color: transparent !important
+        
     }
 
     .dots-menu .page-menu-wrap-clone {
@@ -5459,7 +5457,8 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
     .dots-menu .page-menu-item {
         width: 10px;
         height: 10px;
-        margin: 10px 0
+        margin: 10px 0;
+        color: white;
     }
 
     .dots-menu .page-menu-item>a {
@@ -5470,15 +5469,15 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
         margin: 0;
         background-color: rgba(0, 0, 0, .4);
         border-radius: 50%;
-        color: #777
+        color: rgb(255, 255, 255)
     }
 
     .dots-menu .page-menu-item>a:hover {
-        background-color: rgba(0, 0, 0, .7)
+        background-color: rgba(255, 255, 255, 0.7)
     }
 
     .dots-menu .page-menu-item.current>a {
-        background-color: #1a73e8
+        background-color: #8e6416
     }
 
     .dots-menu.dots-menu-border .page-menu-item {
@@ -5488,15 +5487,15 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
 
     .dots-menu.dots-menu-border .page-menu-item>a {
         background-color: transparent !important;
-        border: 3px solid rgba(0, 0, 0, .4)
+        border: 3px solid rgba(255, 255, 255, 0.4)
     }
 
     .dots-menu.dots-menu-border .page-menu-item>a:hover {
-        border-color: rgba(0, 0, 0, .7)
+        border-color: rgba(155, 110, 19, 0.7)
     }
 
     .dots-menu.dots-menu-border .page-menu-item.current>a {
-        border-color: #1a73e8
+        border-color: #835910
     }
 
     .dots-menu .page-menu-item div {
@@ -5504,7 +5503,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
         width: auto;
         top: 50%;
         right: 25px;
-        background-color: #1a73e8;
+        background-color: #836414;
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -5534,7 +5533,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
         height: 0;
         border-top: 7px solid transparent;
         border-bottom: 7px solid transparent;
-        border-left: 6px solid #1a73e8;
+        border-left: 6px solid #87640d;
         transform: translateY(-50%)
     }
 
@@ -5691,6 +5690,20 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
     transition: opacity .3s ease
 }
 
+#slider{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slider-inner{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+
+}
 .side-panel-open .body-overlay {
     opacity: 1;
     z-index: 599;
@@ -5792,7 +5805,9 @@ body:not(.stretched) .slider-parallax .slider-inner {
         display: -ms-flexbox;
         display: flex;
         flex-grow: 1;
-        align-items: center
+        align-items: center;
+        justify-content:center;
+        background-color: #000;
     }
 }
 
