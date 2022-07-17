@@ -1688,7 +1688,8 @@ a.h-text-dark:hover {
 }
 
 [class*=col-]:not([class*=sticky-]):not([class*=position-]) {
-    position: relative
+    position: relative;
+    background-color: rgb(207, 207, 207);
 }
 
 .col-1-5 {
@@ -3378,14 +3379,6 @@ html[xmlns] .slider-wrap {
         border-bottom: none
     }
 
-    /* #logo img {
-        -webkit-transition: height .4s ease, padding .4s ease, margin .4s ease, opacity .3s ease;
-        transition: height .4s ease, padding .4s ease, margin .4s ease, opacity .3s ease
-    } */
-/* 
-    #logo img {
-        max-height: 100%
-    } */
 
     .mega-menu-content,
     .sub-menu-container {
@@ -3451,7 +3444,7 @@ html[xmlns] .slider-wrap {
         line-height: 22px
     }
 }
-/* 
+
 @media(max-width:991.98px) {
     .sticky-header #header-wrap {
         position: fixed;
@@ -3466,15 +3459,15 @@ html[xmlns] .slider-wrap {
 
     .sticky-header .header-wrap-clone {
         display: block
-    } */
+    } 
 
-    /* .sticky-header .menu-container {
+     .sticky-header .menu-container {
         max-height: 60vh;
         margin: 1rem 0;
         overflow-x: hidden;
         overflow-y: scroll
-    } */
-/* 
+    } 
+
     body:not(.primary-menu-open) .dark.transparent-header-responsive,
     body:not(.primary-menu-open) .transparent-header-responsive {
         background-color: transparent;
@@ -3485,7 +3478,7 @@ html[xmlns] .slider-wrap {
         background-color: rgba(255, 255, 255, .8);
         z-index: 1
     }
-} */
+} 
 
 #logo {
     position: relative;
@@ -3856,7 +3849,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
         -webkit-transform: translate(-280px, 0);
         -o-transform: translate(-280px, 0);
         transform: translate(-280px, 0);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
         transform-style: preserve-3d
     }
 
@@ -7600,7 +7593,7 @@ body:not(.device-touch) .portfolio {
 
 .entry {
     position: relative;
-    margin-bottom: 50px
+    
 }
 
 .posts-md .entry,
@@ -13199,7 +13192,8 @@ blockquote.float-end {
     position: relative;
     z-index: 1;
     width: 100%;
-    touch-action: manipulation
+    touch-action: manipulation;
+    background-color: rgb(207, 207, 207);
 }
 
 .owl-carousel .owl-stage {
