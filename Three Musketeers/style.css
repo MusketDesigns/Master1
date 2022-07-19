@@ -70,182 +70,6 @@ ul {
     text-shadow: none
 }
 
-.about{
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 90vh;
-    width: 100vw;
-    background-color: rgb(169, 167, 167);
-  }
-
-  .portSite{
-    position: relative;
-    border-radius: 2%;
-    width: 30%;
-    height: 40%;
-    align-self: flex-start;
-    display: flex;
-    justify-content: right;
-    transition: 0.5s;
-    color: rgb(255, 255, 255);
-    top: 2%;
-  }
-  .portSite h2{
-    color: white;
-    font-size: 0.6em;
-  }
-  .portCont::before{
-    border-radius: 2%;
-    content: "";
-    background-image: url(./portfolio.jpg);
-    background-size: cover;
-    opacity: 0.9;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-  }
-
-  .portSite span{
-    color: aqua;
-    font-size: 2rem;
-    width: 50%;
-  }
-
-  .portCont h3{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.2em;
-    font-weight: bolder;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.715);
-    color: white;
-    width: inherit;
-    height: 44%;
-    display: inline-block;
-    justify-self:right;
-    margin-top: 12%;
-    margin-left: 20%;
-    padding: 4%;
-  }
-
-  .portCont{
-    width: 70%;
-    display: inline-block;
-    justify-self: flex-end;
-  }
-
-  .portSite h2{
-    position: relative;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 3em;
-  }
-  
-  .portSite:hover{
-   
-    transform:scale(1.2) translateX(10%) translateY(10%);
-        
-  }
-
-  .busSite{
-    position: relative;
-    border-radius: 2%;
-    width: 30%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    justify-self: flex-end;
-    transition: 0.5s;
-    color: rgb(255, 255, 255);
-    
-  }
-  .busCont::before{
-    border-radius: 2%;
-    content: "";
-    background-image: url(./website.jpg);
-    background-size: cover;
-    opacity: 0.7;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-  }
-
-  .busSite h2{
-    position: relative;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 3em;
-    background:#05332eef;
-    width: 50%;
-    margin: 20% 10% 10% 25%;
-    padding: 2%;
-  }
-  .busCont h3{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.2em;
-    font-weight: bolder;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.586);
-    color: rgb(0, 0, 0);
-    width: 60%;
-    height: 43%;
-    display: inline-block;
-    justify-self:flex-start;
-    align-self: flex-end;
-    margin: -10% 0% 0% -20%;
-    padding:4%;
-    border-top-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-  }
-
-  .busSite span{
-    color: rgb(5, 90, 54);
-    font-size: 2.5em;
-    
-  }
-
-  .busSite:hover{
-    transform:scale(1.2) translateX(-10%) translateY(-10%);
-
-  }
-
-  .ecomSite{
-    position: relative;
-    border-radius: 2%;
-    width: 30%;
-    height: 60%;
-    align-self: flex-end;
-    display: flex;
-    justify-content: center;
-    transition: 0.5s;
-    color: white;
-    
-  }
-  .ecomCont::before{
-    border-radius: 2%;
-    content: "";
-    background-image: url(./80689.jpg);
-    background-size: contain;
-    opacity: 0.4;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-  }
-  
-  .ecomSite h2{
-    position: relative;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2em;
-  }
-  .ecomSite:hover{
-    color: #976a10;
-    transform:scale(1.3) translateX(-20%) translateY(-20%);
-    
-  }
 
 :active,
 :focus {
@@ -418,6 +242,95 @@ small {
         max-width: 1440px
     }
 }
+.sites{
+    background-color: slategray;
+    
+}
+.portSite{
+    width: 80vw;
+    height: 50vh;
+   display: flex;
+   flex-direction: row;
+   padding: 1%;
+   align-items: center;
+}
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .portSite {
+      flex-direction: column;
+    }
+  }
+
+  .portDiv{
+    width: 100%;
+    height: 100%;
+    background-image: url(./portfolio.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+
+
+.portText h2 {
+    width: 80%;
+    margin-left: 2%;
+    color: white;
+    
+}
+.portText h4 {
+    color: white;
+    width: 80%;
+    margin-left: 2%;
+}
+ 
+
+.busSite{
+    width: 100vw;
+    height: 50vh;
+   display: flex;
+   flex-direction: row;
+   padding: 1%;
+   padding-top: 2%;
+   align-items: center;
+   justify-content: space-around
+   
+}
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .busSite {
+      flex-direction: column;
+    }
+  }
+
+  .busDiv{
+    width: 60%;
+    height: 100%;
+    background-image: url(./website.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin-right: 2%;
+    border-radius: 2px;
+    
+  }
+
+
+.busText h2 {
+    width: 100%;
+
+    color: white;
+    display: flex;
+    justify-content: right;
+}
+
+.busText h4 {
+    color: white;
+    width: 40%;
+   float: right;
+}
+ 
 
 .double-line,
 .line {
@@ -1688,7 +1601,8 @@ a.h-text-dark:hover {
 }
 
 [class*=col-]:not([class*=sticky-]):not([class*=position-]) {
-    position: relative
+    position: relative;
+    background-color: rgb(207, 207, 207);
 }
 
 .col-1-5 {
@@ -3378,14 +3292,6 @@ html[xmlns] .slider-wrap {
         border-bottom: none
     }
 
-    /* #logo img {
-        -webkit-transition: height .4s ease, padding .4s ease, margin .4s ease, opacity .3s ease;
-        transition: height .4s ease, padding .4s ease, margin .4s ease, opacity .3s ease
-    } */
-/* 
-    #logo img {
-        max-height: 100%
-    } */
 
     .mega-menu-content,
     .sub-menu-container {
@@ -3451,7 +3357,7 @@ html[xmlns] .slider-wrap {
         line-height: 22px
     }
 }
-/* 
+
 @media(max-width:991.98px) {
     .sticky-header #header-wrap {
         position: fixed;
@@ -3466,15 +3372,15 @@ html[xmlns] .slider-wrap {
 
     .sticky-header .header-wrap-clone {
         display: block
-    } */
+    } 
 
-    /* .sticky-header .menu-container {
+     .sticky-header .menu-container {
         max-height: 60vh;
         margin: 1rem 0;
         overflow-x: hidden;
         overflow-y: scroll
-    } */
-/* 
+    } 
+
     body:not(.primary-menu-open) .dark.transparent-header-responsive,
     body:not(.primary-menu-open) .transparent-header-responsive {
         background-color: transparent;
@@ -3485,7 +3391,7 @@ html[xmlns] .slider-wrap {
         background-color: rgba(255, 255, 255, .8);
         z-index: 1
     }
-} */
+} 
 
 #logo {
     position: relative;
@@ -3856,7 +3762,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
         -webkit-transform: translate(-280px, 0);
         -o-transform: translate(-280px, 0);
         transform: translate(-280px, 0);
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
         transform-style: preserve-3d
     }
 
@@ -7601,7 +7507,7 @@ body:not(.device-touch) .portfolio {
 
 .entry {
     position: relative;
-    margin-bottom: 50px
+    
 }
 
 .posts-md .entry,
@@ -13200,7 +13106,8 @@ blockquote.float-end {
     position: relative;
     z-index: 1;
     width: 100%;
-    touch-action: manipulation
+    touch-action: manipulation;
+    background-color: rgb(207, 207, 207);
 }
 
 .owl-carousel .owl-stage {
