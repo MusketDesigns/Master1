@@ -1602,7 +1602,7 @@ a.h-text-dark:hover {
 
 [class*=col-]:not([class*=sticky-]):not([class*=position-]) {
     position: relative;
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(192, 192, 192);
 }
 
 .col-1-5 {
@@ -2753,7 +2753,7 @@ img.lazy:not([src]) {
     position: relative;
     width: 100%;
     
-    background-color: #76747499;
+    background-color: rgb(192, 192, 192);
     overflow: hidden;
 }
 
@@ -6418,7 +6418,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 #page-title {
     position: relative;
     padding: 4rem 0;
-    background-color: #f5f5f5;
+    background-color: rgb(192, 192, 192);
     border-bottom: 1px solid #eee
 }
 
@@ -6645,7 +6645,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 
 #content {
     position: relative;
-    background-color: #fff
+    background-color: rgb(192, 192, 192)
 }
 
 #content p {
@@ -6944,7 +6944,7 @@ body:not(.device-touch) .portfolio {
 
 .portfolio-desc span,
 .portfolio-desc span a {
-    color: #888
+    color: #000
 }
 
 .portfolio-desc span a:hover {
@@ -13107,7 +13107,7 @@ blockquote.float-end {
     z-index: 1;
     width: 100%;
     touch-action: manipulation;
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(192, 192, 192);
 }
 
 .owl-carousel .owl-stage {

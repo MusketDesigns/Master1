@@ -14,7 +14,7 @@ $headers = "From: ".$visitor_email;
 $txt = "You have received an email form ".$visitor_name.".\n\n".$visitor_message;
 
 mail($mailTo, $email_subject,$visitor_phone,$visitor_email,$visitor_service,$txt,$headers);
-header("Locations: index.php?mailsend");
+header("Locations: index.html?mailsend");
 
 
 }

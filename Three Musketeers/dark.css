@@ -5,7 +5,7 @@
 .dark h4,
 .dark h5,
 .dark h6 {
-    color: #eee
+    color: #000
 }
 
 .dark a:not([class*=btn-]):hover {
@@ -571,7 +571,7 @@ body #side-panel.dark {
 .dark .entry-title h2 a,
 .dark .entry-title h3 a,
 .dark .entry-title h4 a {
-    color: #f7f7f7
+    color: #000
 }
 
 .dark .entry-title h2 a:hover,
@@ -582,7 +582,7 @@ body #side-panel.dark {
 
 .dark .entry-meta li,
 .dark .entry-meta a:not(:hover) {
-    color: #bbb
+    color: #000
 }
 
 .dark .entry-link {
@@ -1436,8 +1436,8 @@ body #side-panel.dark {
 
 .dark #footer,
 #footer.dark {
-    color: rgba(255, 255, 255, .75);
-    background-color: #282828;
+    color: rgba(000;
+    background-color: rgb(192, 192, 192);
     border-top-color: rgba(255, 255, 255, .15)
 }
 
@@ -1456,12 +1456,12 @@ body #side-panel.dark {
 
 .dark #copyrights,
 #copyrights.dark {
-    color: rgba(255, 255, 255, .4);
-    background-color: rgba(0, 0, 0, .2)
+    color: rgb(192, 192, 192);
+    background-color: rgb(192, 192, 192)
 }
 
 .dark .copyright-links a {
-    color: rgba(255, 255, 255, .4);
+    color: rgba(255, 255, 255, .15);
     border-bottom-color: rgba(255, 255, 255, .65)
 }
 
